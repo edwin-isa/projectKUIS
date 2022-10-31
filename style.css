@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Kolom Pertama */
+.top
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: #eff4fd; */
+}
+
+.header
+{
+    width: 100%;
+}
+
+.logo
+{
+margin-left: 50px;
+margin-top: 10px;
+max-width: 200px;
+}
+
+.tabel_jarak
+{
+    width: 25%;
+}
+
+.tabel_nav
+{
+    width: 100%;
+}
+
+.tabel_nav .jarak
+{
+    margin: auto;
+    padding: 0px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.tabel_nav .jarak  a
+{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tabel_nav .jarak a:hover
+{
+    color: #03a9f4;
+
+}
+
+nav
+{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.detail
+{
+    margin-left: 8%;
+    margin-top: 11%;
+}
+
+.detail h1
+{
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+span
+{
+    color: #03a9f4;
+}
+
+.detail p{
+    color: #333;
+    line-height: 22px;
+}
+
+.detail a
+{
+ background:#03a9f4;
+ padding: 10px 10px;
+ text-decoration: none;
+ font-weight: bold;
+ color: #fff;
+ display: inline-block;
+ margin: 30px 0;
+ border-radius: 5px;
+}
+
+.images
+{
+    margin-bottom: 140px;
+    width: 42.5%;
+    height: 62.5%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img
+{
+    height: 85%;
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, lefr 1s;
+}
+
+.images:hover .shape
+{
+    bottom: 40px;
+    width: 85%;
+    height: 85%;
+}
+
+.images .iam
+{
+    width: 125%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
+}
+
+.container .left_side
+{
+    position: relative;
+    background: #2a79e7;
+    padding: 40px;
+}
+
+.profiletext
+{
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext .imgbx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Problem Solving Flex */
+    margin-left: 30%;
+}
+
+.profiletext .imgbx img
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletext h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactinfo
+{
+    padding-top: 40px;
+}
+
+.contactinfo ul
+{
+    position: relative;
+}
+
+.contactinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactinfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactinfo_pendidikan
+{
+    margin-top: 30px;
+}
+
+.contactinfo_pendidikan li
+{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.contactinfo_pendidikan h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactinfo_pendidikan h4
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactinfo_bahasa
+{
+    margin-top: 35px;
+}
+
+.contactinfo_bahasa ul li
+{
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactinfo_bahasa .persen
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contactinfo_bahasa .persen div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.contactinfo_bahasa h5
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactinfo_pro
+{
+    margin-top: 35px;
+}
+
+.contactinfo_pro ul li
+{
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactinfo_pro .persen
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contactinfo_pro .persen div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.contactinfo_pro h5
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.container .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.rangkuman_profile
+{
+    margin-bottom: 50px;
+}
+
+.rangkuman_profile:last-child
+{
+    margin-bottom: 30px;
+}
+
+.title2 
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p
+{
+    color: #333;
+}
+
+.rangkuman_exp
+{
+    margin-top: 60px;
+}
+
+.rangkuman_exp .year_company
+{
+    min-width: 170px;
+}
+
+.rangkuman_exp .year_company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 650;
+}
+
+.rangkuman_exp .text h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 20px;
+}
+
+
+
+.project
+{
+    margin-top: 60px;
+}
+
+.project .title2
+{
+    margin-top: -10px;
+}
+.project h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+}
+
+.project h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project .title_yt
+{
+    margin-top: 30px
+}
+
+.hobi
+{
+    margin-top: 60px;
+}
+
+.hobi ul 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.hobi ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.hobi ul li .fa
+{
+    color: #03a9f4;
+    font-size: 17,5px;
+    margin-right: 5px;
+}
+
+footer
+{
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    padding-top: 40px;
+    color: #333;
+}
+
+.footer-content
+{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-bottom: 15px;
+}
+
+.footer-content
+{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.socials
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li
+{
+    margin: 0 10px;
+}
+
+.socials a i
+{
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color .4s ease;
+}
+
+.socials a:hover i
+{
+    color: #03a9f4;
+}
+
+
+.footer-bottom
+{
+    background: #2a79e7;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 200px;
+}
+
+
+/* Kolom Ketiga */
+
+
+/* {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_bottom
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container_bottom:after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kontak_box
+{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left
+{
+    height: 100%;
+    background: url();
+    background-size: cover;
+}
+
+.right
+{
+    padding: 25px 40px;
+}
+
+h2
+{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2::after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;.container_bottom
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2a79e7;
+}  */
